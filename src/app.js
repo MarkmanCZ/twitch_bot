@@ -44,6 +44,6 @@ function checkTwitchChatt(userstate, message, channel) {
 		//varuj uzivatele
 		client.say(channel, `@${userstate.username},omluváme se! Vaše zpráva byla smazaná.`)
 		//smaz zpravu
-
+		client.deletemessage(channel, userstate.id)
 	}
 }
